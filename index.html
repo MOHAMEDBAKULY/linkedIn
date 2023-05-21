@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOB SEARCH WEBSITE</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/ce86e163cb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"><img src="photos/logo.png" alt=""></a>
+
+            <div class="search-box">
+                <input type="search" name="" id="" placeholder="search">
+            </div>
+        </div>
+        <div class="navbar-center">
+            <ul>
+          <li><a href="#" class="active-link"> <i class="fa-solid fa-house"></i> <span>Home</span> </a></li>
+          <li><a href="#"> <i class="fa-solid fa-user"></i> <span>My Network</span> </a></li>
+          <li><a href="#"> <i class="fa-solid fa-briefcase"></i> <span>Jobs</span> </a></li>
+          <li><a href="#"> <i class="fa-solid fa-envelope"></i> <span>Messeging</span> </a></li>
+          <li><a href="#"> <i class="fa-solid fa-bell"></i> <span>Notification</span> </a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img src="photos/malingi" alt="" class="nav-profile" onclick="toggleMenu()">
+            </div>
+        </div>
+
+     <!-- PROFILE DROP DOWN MENU -->
+
+     <div class="profile-menu-wrap" id="profileMenu">
+        <div class="profile-menu">
+            <div class="user-profile">
+                <img src="photos/malingi" alt="">
+                <div>
+                    <h3>Malingi Samson</h3>
+                    <a href="profile.html">See Your Profile</a>
+                </div>
+            </div>
+
+            <hr>
+
+            <a href="#" class="profile-menu-link">
+            <img src="photos/feedback.png" class="">
+            <p>Give FeedBack</p>
+            <span>></span>
+           </a>
+            <a href="#" class="profile-menu-link">
+                <img src="photos/settings.png" class="">
+                <p>Settings & Privacy</p>
+                <span>></span> 
+            </a>
+        
+
+            <a href="#" class="profile-menu-link">
+            <img src="photos/helpus.png" class="">
+            <p>Help & Support</p>
+            <span>></span>
+            </a>
+          
+
+            <a href="#" class="profile-menu-link">
+            <img src="photos/display" class="">
+            <p>Display & Accessibility</p>
+            <span>></span>
+            </a>
+          
+
+            <a href="#" class="profile-menu-link">
+            <img src="photos/logout.png" class="">
+            <p>Log out</p>
+            <span>></span>
+            </a>
+          
+        </div>
+     </div>
+
+
+
+
+
+
+
+
+    </nav>
+
+    <!-- NAVBAR ENDING -->
+
+
+
+
+  <div class="container">
+<!-- LEFT SIDE BAR -->
+    <div class="left-content">
+        <div class="sidebar-profile-box">
+            <img src="photos/main" alt="" width="100%">
+            <div class="sidebar-profile-info">
+               <a href="profile.html"><img src="photos/malingi" alt=""></a>
+                <h1>Malingi Mwazanje</h1>
+                <h3> Senior Marine Engineeer at KPA</h3>
+                <ul>
+                    <li>Your Profile views <span>300</span></li>
+                    <li>Your Post Views <span>480</span></li>
+                    <li>Your Connections views<span>700</span></li>
+                </ul>
+            </div>
+            <div class="sidebar-profile-link">
+                <a href="#"><img src="photos/item.png" alt="">My items</a>
+                <a href="#"><img src="photos/premium.png" alt="">Try Premium</a>
+            </div>
+        </div>
+
+        <div class="sidebar-activity" id="sideBar">
+            <h3>RECENT</h3>
+            <a href="#"><img src="photos/recent.png" alt="">JavaScript Mastery</a>
+            <a href="#"><img src="photos/recent.png" alt="">Redefining Marine Engineering</a>
+            <a href="#"><img src="photos/recent.png" alt="">Mobile App Development</a>
+            <a href="#"><img src="photos/recent.png" alt="">Web Scraping</a>
+            <a href="#"><img src="photos/recent.png" alt="">Scalping Trading Methods</a>
+            <a href="#"><img src="photos/recent.png" alt="">Marine Voyage WorkShop</a>
+            <a href="#"><img src="photos/recent.png" alt="">Blockchain Technology Enhancement</a>
+            <h3>GROUPS</h3>
+            <a href="#"><img src="photos/groups.png" alt="">FrontEnd Enthusiasts</a>
+            <a href="#"><img src="photos/groups.png" alt="">TailwindCSS & UX/UI</a>
+            <a href="#"><img src="photos/groups.png" alt="">APIS & Web Hosting</a>
+            <a href="#"><img src="photos/groups.png" alt="">React JS Sessions</a>
+             <h3>HASHTAGS</h3>
+             <a href="#"><img src="photos/hashtags" alt="">Marine Training</a>
+             <a href="#"><img src="photos/hashtags" alt="">FirstTrip IndianOcean</a>
+             <a href="#"><img src="photos/hashtags" alt="">LearnCodeOnline</a>
+             <a href="#"><img src="photos/hashtags" alt="">React JS Sessions</a>
+
+             <div class="discovery-more-link">
+                <a href="#">Discover more</a>
+             </div>
+        </div>
+       <p id="showmore-link" onclick="clickIt()">Show more <b>+</b></p>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+
+      <div class="create-post">
+        <div class="create-post-input">
+          <img src="photos/malingi" alt="">
+         <textarea name="" id=""  rows="2" placeholder="Write a post"></textarea>
+        </div>
+
+
+         <div class="create-post-links">
+              <li><img src="photos/photos.png">Photo</li>
+              <li><img src="photos/video.png">Video</li>
+              <li><img src="photos/events">Events</li>
+              <li>Post</li>
+         </div> 
+      </div>
+
+      <div class="sort-by">
+        <hr>
+        <p>Sort By: <span>Top <img src="photos/arrow.png" alt=""></span></p>
+      </div>
+      
+      <div class="posts">
+        <div class="post-author">
+            <img src="photos/Faridi" alt="">
+            <div>
+                <h3>Farid Rigoo</h3>
+                <small>Co-Founder and COO at EasyWebsite LCC  | Trader</small>
+                <small>2min ago</small>
+            </div>
+        </div>
+
+        <p>Operator of an online learning platform intended to serve students and professionals.
+             The company's platform offers courses related to programming and coding including database,
+              machine learning, web and mobile application development and programming languages,
+               enabling clients to learn coding at affordable rates.</p>
+        <img src="photos/exited-diverse-business-colleagues-watching-presentation.jpg" alt=""  width="100%">
+
+        <div class="post-stats">
+            <div>
+                <img src="photos/thumbs up.png" alt="">
+                <img src="photos/love.png" alt="">
+                <img src="photos/clap" alt="">
+               <span class="liked-user">Alister Ten Hag and 90 others</span>
+            </div>
+            <span>39 Comments &middot; 90 Shares</span>
+        </div>
+
+        <div class="post-activity">
+            <div>
+                <img src="photos/user" alt="" class="post-activity-user-icon">
+                <img src="photos/arrow.png" alt="" class="post-activity-arrow-icon">
+            </div>
+            <div class="post-activity-links" >
+                <img src="photos/thumbs up.png" alt="">
+                <span>Like</span>
+            </div>
+
+            <div class="post-activity-links">
+                <img src="photos/comments.png" alt="">
+                <span>Comments</span>
+            </div>
+
+            <div class="post-activity-links">
+                <img src="photos/share" alt="">
+                <span>Share</span>
+            </div>
+
+            <div class="post-activity-links">
+                <img src="photos/send.png" alt="">
+                <span>Send</span>
+            </div>
+        </div>
+      </div>
+
+      <div class="posts">
+        <div class="post-author">
+            <img src="photos/Hakeem" alt="">
+            <div>
+                <h3>Hakeem Parare</h3>
+                <small>Senior Vice President at Lakers Franchise BasketBall Team | System Architecture</small>
+                <small>7w ago</small>
+            </div>
+        </div>
+
+        <p>One of the most decorated and accomplished Men in all of professional sports, Hakeem Parare has made a name for himself as a dominate and powerful 
+            figure both on and off the court. During her NBA BUCKS days, HE played on the Conference final Championship team in 2022 as well as the undefeated 2020
+            team and was named Final Four Most Outstanding Player in 2019. Since being drafted #2 in the NBA, HE has won 12 NBA Championships and Rings Defeating Likes of MJ23 and KingLebron </p>
+        <img src="photos/basketball" alt=""  width="100%">
+
+        <div class="post-stats">
+            <div>
+                <img src="photos/thumbs up.png" alt="">
+                <img src="photos/love.png" alt="">
+                <img src="photos/clap" alt="">
+               <span class="liked-user">Bayoyo Batu  and 32 others</span>
+            </div>
+            <span>222 Comments &middot; 67  Shares</span>
+        </div>
+
+        <div class="post-activity">
+            <div>
+                <img src="photos/user" alt="" class="post-activity-user-icon">
+                <img src="photos/arrow.png" alt="" class="post-activity-arrow-icon">
+            </div>
+            <div class="post-activity-links" >
+                <img src="photos/thumbs up.png" alt="">
+                <span>Like</span>
+            </div>
+
+            <div class="post-activity-links">
+                <img src="photos/comments.png" alt="">
+                <span>Comments</span>
+            </div>
+
+            <div class="post-activity-links">
+                <img src="photos/share" alt="">
+                <span>Share</span>
+            </div>
+
+            <div class="post-activity-links">
+                <img src="photos/send.png" alt="">
+                <span>Send</span>
+            </div>
+        </div>
+      </div>
+
+      <div class="posts">
+        <div class="post-author">
+            <img src="photos/Hakeem" alt="">
+            <div>
+                <h3>Hakeem Parare</h3>
+                <small>Senior Vice President at Lakers Franchise BasketBall Team | System Architecture</small>
+                <small>7w ago</small>
+            </div>
+        </div>
+
+        <p>One of the most decorated and accomplished Men in all of professional sports, Hakeem Parare has made a name for himself as a dominate and powerful 
+            figure both on and off the court. During her NBA BUCKS days, HE played on the Conference final Championship team in 2022 as well as the undefeated 2020
+            team and was named Final Four Most Outstanding Player in 2019. Since being drafted #2 in the NBA, HE has won 12 NBA Championships and Rings Defeating Likes of MJ23 and KingLebron </p>
+        <img src="photos/worldcup" alt=""  width="100%">
+
+        <div class="post-stats">
+            <div>
+                <img src="photos/thumbs up.png" alt="">
+                <img src="photos/love.png" alt="">
+                <img src="photos/clap" alt="">
+               <span class="liked-user">Bayoyo Batu  and 32 others</span>
+            </div>
+            <span>222 Comments &middot; 67  Shares</span>
+        </div>
+
+        <div class="post-activity">
+            <div>
+                <img src="photos/cupimg" alt="" class="post-activity-user-icon">
+                <img src="photos/arrow.png" alt="" class="post-activity-arrow-icon">
+            </div>
+            <div class="post-activity-links" >
+                <img src="photos/thumbs up.png" alt="">
+                <span>Like</span>
+            </div>
+
+            <div class="post-activity-links">
+                <img src="photos/comments.png" alt="">
+                <span>Comments</span>
+            </div>
+
+            <div class="post-activity-links">
+                <img src="photos/share" alt="">
+                <span>Share</span>
+            </div>
+
+            <div class="post-activity-links">
+                <img src="photos/send.png" alt="">
+                <span>Send</span>
+            </div>
+        </div>
+      </div>
+
+     
+
+
+
+
+
+
+
+
+    </div>
+
+    <!-- RIGHT CONTENT -->
+    <div class="right-content">
+
+        <div class="sidebar-news">
+            <img src="photos/trending.png" alt="" class="info-icon">
+            <h3>Trending News</h3>
+            <a href="#">Job Opportunities Matching Your Skills</a>
+            <span>Id ago &middot; 10,934 readers</span>
+    
+            <a href="#">Construction of the 1000ft Ship</a>
+            <span>2m ago &middot; 90,941 readers</span>
+    
+            <a href="#">The UN Plans to cast out old maritime Laws</a>
+            <span>11m ago &middot; 708 readers</span>
+    
+            <a href="#">BlockChain Techonology to be Used on shipping Industries</a>
+            <span>13w ago &middot; 40,300 readers</span>
+    
+            <a href="#">Why japan The leader in Fishing </a>
+            <span>3w ago &middot; 30,350 readers</span>
+
+            <a href="#" class="readmore-link">Read more</a>
+        </div>
+
+        <div class="sidebar-ad">
+            <small>Ad #&middot; &middot; &middot;</small>
+            <p>100 projets in 100 days for frontend developers </p>
+            <div>
+                <img src="photos/100projects.png"></img>
+                <img src="photos/bitcon"></img>
+            </div>
+            <b>Raising of Bitcoin Popularity </b>
+            <a href="#" class="ad-link">Learn More</a>
+        </div>
+
+        <div class="sidebar-useful-links">
+          <a href="#">About</a>
+          <a href="#">Accessibility</a>
+          <a href="#">Help Center</a>
+          <a href="#">Private Policy</a>
+          <a href="#">Advertising</a>
+          <a href="#">Get the App</a>
+          <a href="#">More</a>
+        </div>
+
+        <div class="copyright">
+            <img src="photos/logo.png" alt="">
+            <p>LinkedUp &#169; 2023. All Right Preserved</p>
+        </div>
+
+    </div>
+  </div>
+ 
+
+    
+</body>
+</html>
